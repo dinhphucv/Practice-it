@@ -1,0 +1,19 @@
+Scanner kb = new Scanner(System.in);
+final int SENTINEL = -1;
+System.out.print("Type a number (or " + SENTINEL + " to stop): ");
+int number = kb.nextInt();
+if (number == -1) {
+    return;
+}
+int max = number, min = number;
+do {
+    if(number > max) {
+        max = number;
+    } else if (number < min) {
+        min = number;
+    }
+    System.out.print("Type a number (or " + SENTINEL + " to stop): ");
+    number = kb.nextInt();
+} while (number != SENTINEL);
+System.out.println("Maximum was " + max);
+System.out.println("Minimum was " + min);
