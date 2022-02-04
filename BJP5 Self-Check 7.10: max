@@ -1,0 +1,9 @@
+public static int max(int[] numbers) {
+    int maxNumber = numbers[0];
+    for (int i = 1; i <= numbers.length - 1; i++) {
+        if (maxNumber < numbers[i]) {
+            maxNumber =  numbers[i];
+        }
+    }
+    return maxNumber;
+}
