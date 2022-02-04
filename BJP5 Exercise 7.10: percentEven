@@ -8,5 +8,5 @@ public static double percentEven(int[] numbers) {
             evenNumbers++;
         }
     }
-    return evenNumbers / numbers.length * 100;
+    return evenNumbers * 100.0 / numbers.length;
 }
