@@ -1,0 +1,8 @@
+public static void mirror(ArrayList<String> list) {
+    int size = list.size();
+    String s = "";
+    for(int i = size - 1; i >= 0; i--) {
+        s = list.get(i);
+        list.add(s);
+    }
+}
